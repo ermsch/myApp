@@ -10,6 +10,12 @@ import {todos} from "../../todos";
 export class TodoComponent {
   @Input() todo!: Todo
 
+  deleteTodo(id: number){
+    const index = todos.findIndex(todo => todo.id === id);
+    if (index !== -1) {
+      todos.splice(index, 1);
+    }
+  }
 
 
 

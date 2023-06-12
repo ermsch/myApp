@@ -14,7 +14,9 @@ export class FormComponent {
 
 
   sendForm(){
+
     const todo: Todo = {
+      id: todos.length + 1,
       name: this.name,
       date: this.date,
       done: false

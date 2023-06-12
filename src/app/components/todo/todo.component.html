@@ -1,5 +1,8 @@
 <div class="todo">
+  {{todo.id}}
   {{todo.name}}
+  {{todo.date}}
+  <button (click)="deleteTodo(todo.id)">delete</button>
 </div>
 
 
