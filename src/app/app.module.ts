@@ -9,6 +9,9 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { LoginComponent } from './components/login/login.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
+import {FormComponent} from "./components/form/form.component";
+import {FormsModule} from "@angular/forms";
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { DatenschutzComponent } from './components/datenschutz/datenschutz.compo
     LandingPageComponent,
     LoginComponent,
     ImpressumComponent,
-    DatenschutzComponent
+    DatenschutzComponent,
+    FormComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

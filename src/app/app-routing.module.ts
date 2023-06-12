@@ -5,6 +5,8 @@ import {LoginComponent} from "./components/login/login.component";
 import {ImpressumComponent} from "./components/impressum/impressum.component";
 import {DatenschutzComponent} from "./components/datenschutz/datenschutz.component";
 import {TodoListComponent} from "./components/todo-list/todo-list.component";
+import {FormComponent} from "./components/form/form.component";
+import {NotFoundComponent} from "./components/not-found/not-found.component";
 
 const routes: Routes = [
   {
@@ -26,6 +28,15 @@ const routes: Routes = [
   {
     path: 'datenschutz',
     component: DatenschutzComponent
+  },
+  {
+    path: 'form',
+    component: FormComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
+
   }
 
 
