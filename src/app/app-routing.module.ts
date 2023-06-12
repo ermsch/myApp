@@ -7,11 +7,16 @@ import {DatenschutzComponent} from "./components/datenschutz/datenschutz.compone
 import {TodoListComponent} from "./components/todo-list/todo-list.component";
 import {FormComponent} from "./components/form/form.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
+import {EditTodoComponent} from "./components/edit-todo/edit-todo.component";
 
 const routes: Routes = [
   {
     path: '',
     component: LandingPageComponent
+  },
+  {
+    path: 'todo/:id',
+    component: EditTodoComponent
   },
   {
     path: 'todos',
@@ -37,7 +42,8 @@ const routes: Routes = [
     path: '**',
     component: NotFoundComponent
 
-  }
+  },
+
 
 
 ];

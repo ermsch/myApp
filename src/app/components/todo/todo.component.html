@@ -3,6 +3,8 @@
   {{todo.name}}
   {{todo.date}}
   <button (click)="deleteTodo(todo.id)">delete</button>
+  <button [routerLink]="['/todo', todo.id]">edit</button>
+
 </div>
 
 

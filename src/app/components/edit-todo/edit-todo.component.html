@@ -1,0 +1,6 @@
+{{todo[id].id}}
+<form action="">
+  <input [(ngModel)]="name" name="name" type="text" placeholder={{todo[id].name}}>
+  <input [(ngModel)]="date" name="date" type="text" placeholder={{todo[id].date}}>
+  <button (click)="editTodo()">change</button>
+</form>

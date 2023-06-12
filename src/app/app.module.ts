@@ -12,6 +12,7 @@ import { DatenschutzComponent } from './components/datenschutz/datenschutz.compo
 import {FormComponent} from "./components/form/form.component";
 import {FormsModule} from "@angular/forms";
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     ImpressumComponent,
     DatenschutzComponent,
     FormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EditTodoComponent
   ],
   imports: [
     BrowserModule,
