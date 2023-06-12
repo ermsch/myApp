@@ -1,0 +1,13 @@
+<form action="">
+  <input [(ngModel)]="name" name="name" type="text" placeholder="name">
+  <input [(ngModel)]="date" name="date" type="text" placeholder="date">
+  <button (click)="sendForm()">send</button>
+</form>
+
+<ul>
+  <p>dein Todo:</p>
+  <li>name: {{name}}</li>
+  <li>date: {{date}}</li>
+</ul>
+
+<a [routerLink]="['/todos']">show Todos</a>
