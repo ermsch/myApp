@@ -1,6 +1,24 @@
-<nav>
-  <a [routerLink]="['/todos']">todos</a>
-  <a [routerLink]="['/impressum']">impressum</a>
-  <a [routerLink]="['/datenschutz']">datenschutz</a>
-  <a [routerLink]="['/form']">form</a>
+<!--<nav class="collapse navbar-collapse">-->
+<!--  <a [routerLink]="['/todos']">todos</a>-->
+<!--  <a [routerLink]="['/impressum']">impressum</a>-->
+<!--  <a [routerLink]="['/datenschutz']">datenschutz</a>-->
+<!--</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/todos']">todos</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/impressum']">impressum</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/datenschutz']">datenschutz</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/form']">form</a>
+      </li>
+    </ul>
+  </div>
 </nav>

@@ -10,6 +10,7 @@ import {Todo} from "../../models/Todo";
 export class FormComponent {
   name!: string
   date!: string
+  done!: boolean
 
 
 
@@ -19,7 +20,7 @@ export class FormComponent {
       id: todos.length + 1,
       name: this.name,
       date: this.date,
-      done: false
+      done: this.done,
     }
     todos.push(todo)
     // this.name = ''

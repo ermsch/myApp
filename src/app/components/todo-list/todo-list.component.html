@@ -1,5 +1,5 @@
-<a [routerLink]="['/']">home</a>
 
-<p>meine todos:</p>
+
+<h3 *ngIf="todoList.length > 0">meine todos:</h3>
 <app-todo *ngFor="let todo of todoList" [todo]="todo" ></app-todo>
 

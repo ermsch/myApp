@@ -1,10 +1,14 @@
 <div class="todo">
-  {{todo.id}}
-  {{todo.name}}
-  {{todo.date}}
-  <button (click)="deleteTodo(todo.id)">delete</button>
-  <button [routerLink]="['/todo', todo.id]">edit</button>
-
+  <div class="info">
+    <p>{{todo.name}}</p>
+    <p>wann?: {{todo.date}}</p>
+    <p *ngIf="todo.done">erledigt?: Ja</p>
+    <p *ngIf="!todo.done">erledigt?: Nein</p>
+  </div>
+  <div class="buttons">
+    <button type="button" class="btn btn-primary" (click)="deleteTodo(todo.id)">delete</button>
+    <button type="button" class="btn btn-primary" [routerLink]="['/todo', todo.id]">edit</button>
+  </div>
 </div>
 
 

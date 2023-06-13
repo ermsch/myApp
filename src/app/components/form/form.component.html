@@ -1,14 +1,33 @@
-<a [routerLink]="['/']">home</a>
-<form action="">
-  <input [(ngModel)]="name" name="name" type="text" placeholder="name">
-  <input [(ngModel)]="date" name="date" type="text" placeholder="date">
-  <button (click)="sendForm()">send</button>
+<!--<a [routerLink]="['/']">home</a>-->
+<!--<form action="">-->
+<!--  <input [(ngModel)]="name" name="name" type="text" placeholder="name">-->
+<!--  <input [(ngModel)]="date" name="date" type="text" placeholder="date">-->
+<!--  <button (click)="sendForm()">send</button>-->
+<!--</form>-->
+
+<!--<ul>-->
+<!--  <p>dein Todo:</p>-->
+<!--  <li>name: {{name}}</li>-->
+<!--  <li>date: {{date}}</li>-->
+<!--</ul>-->
+
+<!--<a [routerLink]="['/todos']">show Todos</a>-->
+
+<h3>Erstelle ein Todo</h3>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input [(ngModel)]="name" name="name"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Date</label>
+    <input [(ngModel)]="date" name="date" type="text" class="form-control" id="exampleInputPassword1" placeholder="date">
+  </div>
+  <div class="form-check">
+    <input [(ngModel)]="done" type="checkbox" name="done" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">done?</label>
+  </div>
+  <button (click)="sendForm()" type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<ul>
-  <p>dein Todo:</p>
-  <li>name: {{name}}</li>
-  <li>date: {{date}}</li>
-</ul>
-
-<a [routerLink]="['/todos']">show Todos</a>
+<app-todo-list></app-todo-list>

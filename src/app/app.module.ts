@@ -13,6 +13,7 @@ import {FormComponent} from "./components/form/form.component";
 import {FormsModule} from "@angular/forms";
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
