@@ -14,6 +14,7 @@ import {FormsModule} from "@angular/forms";
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
